@@ -59,11 +59,11 @@ fn count_collection_iterator(collection: &[HashMap<String, Progress>], value: Pr
 	// 调用extend方法，将my_map1转换为一个迭代器，并将其键值对添加到my_map2中
     my_map2.extend(my_map1.into_iter());
 	// 与上一个相同
-    let count11 = my_map2
+    let count1 = my_map2
         .iter()
         .filter(|v| *v.1 == Progress::Complete)
         .count();
-    count11
+    count1
 }
 
 #[cfg(test)]
